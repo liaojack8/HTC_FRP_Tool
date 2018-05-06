@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("HTC FRP RESET")]
+[assembly: AssemblyTitle("HTC FRP Tool")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HTCFZ")]
-[assembly: AssemblyProduct("HTC FRP RESET")]
-[assembly: AssemblyCopyright("Copyright © 2017 HTCFZ. All rights reserved")]
+[assembly: AssemblyCompany("HTC Flash Zone")]
+[assembly: AssemblyProduct("HTC FRP Tool")]
+[assembly: AssemblyCopyright("Copyright © 2018 HTCFZ. All rights reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 下列 GUID 為專案公開 (Expose) 至 COM 時所要使用的 typelib ID
-[assembly: Guid("554de779-55b4-40a8-a254-59b6c4b410d2")]
+[assembly: Guid("ef970f1e-963d-45ba-9f8d-bb216adc36a9")]
 
 // 組件的版本資訊由下列四個值所組成: 
 //

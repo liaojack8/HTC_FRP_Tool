@@ -1,13 +1,21 @@
-#region Imports
-using System;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-using System.ComponentModel;
-#endregion
+    #region Imports   
+    using System;
+    using System.Drawing;
+    using System.Windows.Forms;
+    using System.Drawing.Drawing2D;
+    using System.ComponentModel;
+   
+    #endregion
+
+//|------Infoz------|
+//
+// Creator: Vengfull @ OwnedCore
+//
+//|------END-Infoz------|
 
 namespace MonoFlat
 {
+
     #region  RoundRectangle
 
     sealed class RoundRectangle
@@ -26,6 +34,7 @@ namespace MonoFlat
     }
 
     #endregion
+
     #region  ThemeContainer
 
     public class MonoFlat_ThemeContainer : ContainerControl
@@ -1389,7 +1398,7 @@ namespace MonoFlat
                 case _Type.CheckMark:
                     if (Toggled)
                     {
-                        G.DrawString("ü", new Font("Wingdings", 18, FontStyle.Regular), Brushes.WhiteSmoke, Bar.X + 18, Bar.Y + 19, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                        G.DrawString("Ã¼", new Font("Wingdings", 18, FontStyle.Regular), Brushes.WhiteSmoke, Bar.X + 18, Bar.Y + 19, new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
                     }
                     else
                     {
@@ -1699,6 +1708,14 @@ namespace MonoFlat
         #endregion
         #region  Properties
 
+        public TextBox instance
+        {
+            get
+            {
+                return MonoFlatTB;
+            }
+        }
+
         public HorizontalAlignment TextAlignment
         {
             get
@@ -1913,11 +1930,6 @@ namespace MonoFlat
         }
 
         #endregion
-
-        public TextBox Instance
-        {
-            get { return MonoFlatTB; }
-        }
 
         public void AddTextBox()
         {
@@ -2564,21 +2576,19 @@ namespace MonoFlat
                 GFX.DrawRectangle(new Pen(BorderColor), MainRectangle);
             }
 
-            NotificationText = "Procedure:";
-
             switch (_NotificationType)
             {
                 case Type.Notice:
-                    //NotificationText = "NOTICE";
+                    NotificationText = "NOTICE";
                     break;
                 case Type.Success:
-                    //NotificationText = "SUCCESS";
+                    NotificationText = "SUCCESS";
                     break;
                 case Type.Warning:
-                    //NotificationText = "WARNING";
+                    NotificationText = "WARNING";
                     break;
                 case Type.Error:
-                    //NotificationText = "ERROR";
+                    NotificationText = "ERROR";
                     break;
             }
 
@@ -2607,4 +2617,4 @@ namespace MonoFlat
     }
 
     #endregion
-}
+ }
